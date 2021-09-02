@@ -1,0 +1,3 @@
+include ':eloviewhomesdk'
+include ':app'
+rootProject.name = "mdm"

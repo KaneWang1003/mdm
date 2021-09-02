@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="212dp"
+        android:text="退出"
+        android:textSize="34sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <Switch
+        android:id="@+id/switch_navigationBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchMinWidth="20dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="60dp"
+        android:showText="true"
+        android:text="隐藏导航栏：      "
+        android:textSize="34sp"
+        android:textOff="关"
+        android:textOn="开"
+        android:thumb="@drawable/thumb"
+        android:track="@drawable/track"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switch_statusbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchMinWidth="20dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="24dp"
+        android:thumb="@drawable/thumb"
+        android:track="@drawable/track"
+        android:showText="true"
+        android:textOn="开"
+        android:textOff="关"
+        android:text="隐藏状态栏：      "
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_navigationBar" />
+</androidx.constraintlayout.widget.ConstraintLayout>
